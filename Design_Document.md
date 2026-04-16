@@ -5,7 +5,7 @@
 ##  Introduction
 
 This project is a Selenium-based automation framework developed using Java and TestNG to automate a demo banking application.
-The objective is to build a reusable, scalable, and maintainable test automation framework**.
+The objective is to build a reusable, scalable, and maintainable test automation framework.
 
 ---
 
