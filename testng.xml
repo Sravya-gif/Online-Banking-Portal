@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="BankingAutomationSuite" parallel="false">
+
+    <!-- Listener for reports & screenshots -->
+    <listeners>
+        <listener class-name="com.srm.listeners.TestListener"/>
+    </listeners>
+
+    <!-- Step 1: Login Tests -->
+    <test name="Login Tests">
+        <classes>
+            <class name="com.srm.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Step 2: Functional Flow -->
+    <test name="Banking Flow Tests">
+        <classes>
+            <class name="com.srm.tests.CustomerTest"/>
+            <class name="com.srm.tests.AccountTest"/>
+            <class name="com.srm.tests.FundTransferTest"/>
+ 
+            
+        </classes>
+    </test>
+
+    <!-- Step 3: Validation -->
+    <test name="Validation Tests">
+        <classes>
+            <class name="com.srm.tests.ValidationTest"/>
+        </classes>
+    </test>
+
+</suite>
